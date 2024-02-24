@@ -26,7 +26,7 @@
     justify-content:left;
     gap: 50px;
     margin-top: 30px;
-    margin-left: 80px;
+    margin-left: 200px;
     padding: 10px;
     margin-bottom: 30px;
 }
@@ -39,7 +39,7 @@
 
 /*Drop down*/
 .dropdown {
-    margin-left: 500px;
+    margin-left: 400px;
     cursor: pointer;
     height: 100vh;
     display: flex;
@@ -96,11 +96,20 @@ body {
 header {
     font-size: 1.5rem;
 }
+form {
+    margin-left: -140px;
+    gap: 50px;
+}
+
 header, form {
     min-height: 20vh;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+form input {
+    width: 500px;
 }
 
 form input, form button {

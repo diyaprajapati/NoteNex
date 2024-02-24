@@ -22,12 +22,15 @@
 .title {
     display: flex;
     flex-direction: row;
-    align-items: start;
-    justify-content: left;
-    margin-left: 70px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
     margin-top: 50px;
     gap: 30px;
     padding: 5px;
+}
+.title img {
+    height: 80px;
 }
 
 /*Drop down*/
@@ -81,6 +84,19 @@ li a:hover{
 }
 
 
-.title .imag {
-    height: 80px;
+/*written text css*/
+
+.text-write textarea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 800px;
+    resize: none;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-left: 300px;
+    padding: 30px;
+    border: 2px solid black;
+    font-size: 20px;
 }
