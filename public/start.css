@@ -48,9 +48,10 @@ section{
     gap: 30px;
 }
 
-.img1 {
+.img1 img{
     margin-top: 60px;
     margin-left: 20px;
+    width: 800px;
     border: 2px solid black;
     height: 580px;
     border-radius: 5px;
@@ -85,10 +86,11 @@ section{
     gap: 30px;
 }
 
-.img2 {
+.img2 img{
     margin-left: 20px;
     border: 2px solid black;
     height: 580px;
+    width: 800px;
     border-radius: 5px;
     margin-top: 90px;
 }
@@ -121,11 +123,12 @@ section{
     gap: 30px;
 }
 
-.img3 {
+.img3 img{
     margin-left: 20px;
     border: 2px solid black;
     height: 580px;
     border-radius: 5px;
+    width: 800px;
     margin-top: 60px;
 }
 
@@ -194,4 +197,66 @@ section{
     background-color: rgba(0, 128, 0, 0.682);
     color: white;
     border-radius: 8px;
+}
+
+/* Media Query for Small Screens */
+@media only screen and (max-width: 768px) {
+
+    /* Reset some styles for small screens */
+    .container {
+        scroll-snap-type: none;
+        overflow-y: visible;
+    }
+
+    section {
+        height: auto;
+        display: block;
+    }
+
+    .text1, .text2, .text3, .text4 {
+        height: auto;
+        text-align: center;
+    }
+
+    .img1 img, .img2 img, .img3 img {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        margin-left: 0;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+    /* Adjust styles for medium screens */
+    .container {
+        gap: 20px;
+    }
+
+    section {
+        gap: 20px;
+    }
+
+    .text1, .text2, .text3, .text4 {
+        text-align: center;
+    }
+
+    .img1 img, .img2 img, .img3 img {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        margin-left: 20px;
+        border-radius: 0;
+    }
+
+    .first, .two, .three {
+        height: auto;
+        flex-direction: column;
+    }
+    .four {
+        gap: 30px
+    }
+    .btn button {
+        width: 150px;
+    }
 }

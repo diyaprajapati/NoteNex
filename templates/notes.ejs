@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diary</title>
-    <link rel="stylesheet" href="diary.css">
+    <title>Sticky Notes</title>
+    <link rel="stylesheet" href="notes.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="icon" type="img" href="Logo_NN.png">
 </head>
 <body>
+
+    <div class="maindiv">
     <nav>
         <div class="hed">
             <img src="NoteNex crop.png" height="100px">
@@ -19,8 +21,8 @@
 
     <!--Title and img-->
     <div class="title">
-        <img class="imag" src="diary2.png" height="90px">
-        <h1>Diary</h1>
+        <img class="imag" src="notes logo.png">
+        <h1>Sticky Notes</h1>
 
         <!--Drop down-->
         <div class="dropdown" id="dropdown">
@@ -31,18 +33,26 @@
 
             <ul>
                 <li>
-                    <a href="todo.html">To-Do List</a>
+                    <a href="todo">To-Do List</a>
                 </li>
                 <li>
-                    <a href="notes.html">Sticky Notes</a>
+                    <a href="diary">Diary</a>
                 </li>
                 <li>
-                    <a href="home.html">Home page</a>
+                    <a href="home">Home page</a>
                 </li>
             </ul>
         </div>
     </div>
 
-    <script src="diary.js"></script>
+    <!--Notes-->
+    <div id="outer">
+        <button class="btn">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"/></svg>
+        </button>
+    </div>
+</div>
+    
+    <script src="notes.js"></script>
 </body>
 </html>

@@ -7,6 +7,7 @@ const collection = require('./mongodb');
 const templatePath = path.join(__dirname,'../templates');
 
 app.use(express.static('./public'));
+app.use(express.static('./src'));
 app.set('view engine', 'ejs');
 app.set('views', templatePath);
 app.use(express.urlencoded({extended:false}));
@@ -25,6 +26,22 @@ app.get('/signup', function (req,res){
 
 app.get('/home', function (req,res) {
     res.render('home');
+});
+
+app.get('/notes', function(req,res) {
+    res.render('notes');
+});
+
+app.get('/todo', function(req,res) {
+    res.render('todo');
+});
+
+app.get('/about', function(req,res) {
+    res.render('about');
+});
+
+app.get('/diary', function(req,res) {
+    res.render('diary');
 });
 
 app.post('/signup', async function (req,res) {
