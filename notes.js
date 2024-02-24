@@ -70,3 +70,8 @@ function deleteNote(id, element) {
   saveNotes(notes);
   notesContainer.removeChild(element);
 }
+
+//drop down
+document.getElementById('dropdown').addEventListener('click', function() {
+  this.classList.toggle('open');
+});
