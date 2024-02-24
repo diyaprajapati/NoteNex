@@ -3,16 +3,59 @@
     padding:0;
     font-family: Poppins, sans-serif;
 }
+body {
+    transition: background-color 0.5s ease;
+}
 
-.headr img {
-    margin-left: 80px;
+nav  {
+    height: 110px;
+}
+
+.hed {
+    display: flex;
+    flex-direction: row;
+    gap: 940px;
+}
+
+.hed svg {
+    margin-top: 40px;
+}
+
+.hed img {
+    margin-left: 160px;
     margin-top: 20px;
 }
+
+/*dark theme
+
+.dark-theme {
+    background-color: #000000;
+    color: #fff;
+}
+
+.dark-theme .menu-btn-sidebar path {
+    fill:white;
+}
+
+.toggle-to-dark .sun-icon{
+    fill: #fff;
+}
+.dark-theme .moon-icon {
+    display: none;
+}
+.sun-icon {
+    display: none;
+}
+.dark-theme .sun-icon {
+    display: inline-block;
+} */
+
+/*Main start*/
 
 .main-cont {
     display: flex;
     flex-direction: column;
-    gap: 100px;
+    gap: 80px;
     align-items: center;
     justify-content: center;
 }
@@ -110,4 +153,39 @@
 .diary-txt2 h3 {
     font-weight: 600;
     color: rgba(85, 85, 85, 0.896);
+}
+
+/* Media Query for Small Screens */
+@media only screen and (max-width: 768px) {
+
+    .main-cont h1 {
+        font-size: 28px;
+    }
+
+    .lists {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .todo, .stickynote, .diary {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+/* Media Query for Medium Screens */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+    .main-cont h1 {
+        font-size: 34px;
+    }
+
+    .lists {
+        gap: 60px;
+    }
+
+    .todo, .stickynote, .diary {
+        width: 100%;
+        max-width: 350px;
+    }
 }
