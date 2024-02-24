@@ -12,7 +12,7 @@ app.set('views', templatePath);
 app.use(express.urlencoded({extended:false}));
 
 app.get('/', function(req,res){
-    res.render('Start.ejs');
+    res.render('start');
 });
 
 app.get('/login', function (req,res){
@@ -21,6 +21,10 @@ app.get('/login', function (req,res){
 
 app.get('/signup', function (req,res){
     res.render('signup');
+});
+
+app.get('/home', function (req,res) {
+    res.render('home');
 });
 
 app.post('/signup', async function (req,res) {
