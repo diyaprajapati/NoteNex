@@ -1,4 +1,6 @@
 *{
+    margin: 0;
+    padding: 0;
     font-family: Poppins,sans-serif;
 }
 /*Header*/
@@ -33,9 +35,9 @@ body{
 .title {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-left: 50px;
+    align-items: start;
+    justify-content: left;
+    margin-left: 70px;
     margin-top: 50px;
     gap: 30px;
     padding: 5px;

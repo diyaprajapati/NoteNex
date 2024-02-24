@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins,sans-serif;
+}
+
+/*Header*/
+
+.hed {
+    display: flex;
+    flex-direction: row;
+    gap: 940px;
+}
+.hed img {
+    margin-left: 50px;
+    margin-top: 15px;
+}
+
+
+/*title*/
+.title {
+    display: flex;
+    flex-direction: row;
+    align-items:start;
+    justify-content:left;
+    gap: 50px;
+    margin-top: 30px;
+    margin-left: 80px;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.title h1 {
+    margin-top: 30px;
+    font-weight: 800;
+    color: rgb(77, 77, 77);
+}
+
+/*Drop down*/
+.dropdown {
+    margin-left: 500px;
+    cursor: pointer;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 140px;
+    position: relative;
+}
+
+.dropdown ul {
+    position: absolute;
+    background-color: rgb(53, 52, 52);
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content:left;
+    align-items:start;
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 190px;
+    gap: 12px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s ease;
+}
+
+
+.dropdown a {
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown li a:hover{
+    background-color: grey;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.dropdown.open ul {
+    opacity: 1;
+    pointer-events: all;
+}
+
+
+/*Main content*/
+body {
+    color: rgb(20, 19, 19);
+    min-height: 100vh;
+}
+header {
+    font-size: 1.5rem;
+}
+header, form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input, form button {
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    color: white;
+    background: rgb(124, 123, 123);
+    border-radius: 5px;
+}
+
+form button {
+    fill: #f8f8f8;
+    background: rgb(11, 11, 11);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    background: rgb(84, 84, 84);
+    fill: black;
+}
+
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todo-list {
+    min-width: 30%;
+    min-height: 18%;
+    list-style: none;
+}
+.todo {
+    margin: 0.5rem;
+    background: rgb(112, 112, 112);
+    color: rgb(209, 209, 209);
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+
+.todo li {
+    flex: 1;
+}
+.trash-btn, .complete-btn {
+    background: #00b62a;
+    fill: white;
+    border: nome;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.trash-btn {
+    background: rgb(146, 2, 2);
+}
+
+.todo-item {
+    padding: 0rem 0.5rem;
+}
+
+.fa-trash, .fa-check {
+    pointer-events: none;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.fall {
+    transform: translateY(8rem) rotate(20deg);
+    opacity: 0;
+}
+
+select {
+    -webkit-appearance: none;
+    -moze-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+}
+
+.select {
+    display: flex;
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+select {
+    background-color: rgb(137, 137, 137);
+    color:black;
+    width: 10rem;
+    cursor: pointer;
+    padding: 1rem;
+    border-radius: 5px;
+}
+.select::after {
+    content: "\25BC";
+    position: absolute;
+    background:rgb(226, 226, 226);
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+.select:hover::after {
+    background:lightgrey;
+    color:black;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 550px) {
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }   
+}
