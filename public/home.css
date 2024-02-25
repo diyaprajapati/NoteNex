@@ -8,7 +8,7 @@ nav  {
     height: 110px;
     display: flex;
     flex-direction: row;
-    gap: 900px;
+    gap: 800px;
 }
 
 /*user detail*/

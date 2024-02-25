@@ -8,6 +8,7 @@ mongoose.connect('mongodb://localhost:27017/LoginSignup')
     console.log('failed to connect');
 })
 
+//login schema
 const LogInSchema = new mongoose.Schema({
     name:{
         type: String,
@@ -18,6 +19,27 @@ const LogInSchema = new mongoose.Schema({
         require: true
     }
 })
+
+//dairy schema
+const DiarySchema = new mongoose.Schema({
+    userId: {
+        type: String,
+        required: true,
+    },
+    pages: [
+        {
+            pageNumber: {
+                type: Number,
+                required: true,
+            },
+            content: {
+                type: String,
+                default: "", // Initial content for a page
+            },
+        },
+    ],
+});
+
 
 const collection = new mongoose.model('Collection1', LogInSchema);
 

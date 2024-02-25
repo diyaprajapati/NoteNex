@@ -100,3 +100,30 @@ li a:hover{
     border: 2px solid black;
     font-size: 20px;
 }
+
+/* Add this style for page navigation */
+.text-write .page-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.text-write button {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.text-write button:hover {
+    background-color: #2980b9;
+}
+
+.text-write #pageCounter {
+    font-size: 16px;
+    color: #3498db;
+}

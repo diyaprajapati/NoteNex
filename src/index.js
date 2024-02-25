@@ -14,7 +14,7 @@ app.set('view engine', 'ejs');
 app.set('views', templatePath);
 app.use(express.urlencoded({extended:false}));
 
-//
+
 app.use(session({
     secret: 'your-secret-key',
     resave: false,

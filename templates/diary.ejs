@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diary</title>
-    <link rel="stylesheet" href="diary.css">
+    <link rel="stylesheet" href="/diary.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -45,8 +45,15 @@
 
     <div class="text-write">
         <textarea id="diary-text" placeholder="Start your diary..."></textarea>
+
+         <!-- Navigation buttons -->
+         <button id="prevPage" onclick="prevPage()">Previous Page</button>
+        <button id="nextPage" onclick="nextPage()">Next Page</button>
+        
+        <!-- Page counter -->
+        <div id="pageCounter">Page 1</div>
     </div>
 
-    <script src="diary.js"></script>
+    <script src="/diary.js"></script>
 </body>
 </html>
