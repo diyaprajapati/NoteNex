@@ -127,3 +127,57 @@ li a:hover{
     font-size: 16px;
     color: #3498db;
 }
+
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+
+    .text-write textarea {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 700px;
+        margin-left: 150px;
+    }
+}
+
+@media screen and (min-width: 750px) and (max-width: 901px) {
+
+    .text-write textarea {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 600px;
+        margin-left: 100px;
+    }    
+}
+
+@media screen and (min-width: 590px) and (max-width: 751px) {
+    .text-write textarea {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .text-write textarea {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 400px;
+        margin-left: 20px;
+    }
+    .hed img {
+        margin-left: 20px;
+    }
+    .title {
+        gap:10px
+    }
+    .title img {
+        margin-left: 5px;
+    }
+    .dropdown {
+        margin-left: 100px;
+    }
+}
