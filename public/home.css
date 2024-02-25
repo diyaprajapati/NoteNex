@@ -6,8 +6,25 @@
 
 nav  {
     height: 110px;
+    display: flex;
+    flex-direction: row;
+    gap: 900px;
 }
 
+/*user detail*/
+.user-detail {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.user-detail h2 {
+    margin-top: 7px;
+}
+
+/**/
 .hed {
     display: flex;
     flex-direction: row;
@@ -179,6 +196,12 @@ nav  {
 /* Media Query for Small Screens */
 @media only screen and (max-width: 768px) {
 
+    .hed {
+        margin-left: -10px;
+    }
+    nav {
+        gap: 20px;
+    }
     .main-cont h1 {
         font-size: 28px;
     }
@@ -197,6 +220,12 @@ nav  {
 /* Media Query for Medium Screens */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
 
+    .hed {
+        margin-left: -10px;
+    }
+    nav {
+        gap:inherit;
+    }
     .main-cont h1 {
         font-size: 34px;
     }
