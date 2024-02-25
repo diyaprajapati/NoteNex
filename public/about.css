@@ -57,3 +57,13 @@
     margin-top: 10px;
     margin-bottom: -10px;
 }
+
+/* Media Query for Small Screens */
+@media only screen and (max-width: 800px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
