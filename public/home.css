@@ -17,11 +17,25 @@ nav  {
     flex-direction: row;
     padding: 10px;
     margin-top: 30px;
-    gap: 20px;
+    gap: 30px;
 }
 
 .user-detail h2 {
     margin-top: 7px;
+    position: relative;
+}
+
+/*Logout button*/
+.user-detail a {
+    text-decoration: none;
+    color: white;
+}
+.user-detail button {
+    background-color: green;
+    border: none;
+    border-radius: 10px;
+    height: 50px;
+    width: 80px;
 }
 
 /**/
@@ -197,10 +211,10 @@ nav  {
 @media only screen and (max-width: 768px) {
 
     .hed {
-        margin-left: -10px;
+        margin-left: -80px;
     }
     nav {
-        gap: 20px;
+        gap: 10px;
     }
     .main-cont h1 {
         font-size: 28px;
@@ -221,7 +235,7 @@ nav  {
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
 
     .hed {
-        margin-left: -10px;
+        margin-left: -50px;
     }
     nav {
         gap:inherit;
