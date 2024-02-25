@@ -1,71 +1,40 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign-Up</title>
-    <link rel="stylesheet" href="signup.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="icon" type="img" href="Logo_NN.png">
-
-</head>
-<body>
-
-    <div class="form-parent">
-        <div class="form-wrappr">
-        <h2>Sign Up</h2>
-        <!--Enter phone or email and password
-        <form action="/signup">
-            <div class="email-phn">
-                <div class="text">
-                    <label>Enter E-mail</label>
-                </div>
-                <input type="text" name="name" onkeyup="validateForm()">
-            </div>
-            <div class="psswd">
-                <div class="text">
-                    <label for="password">Password</label>
-                </div>
-                <input class="pass" name="password" type="password">
-
-                <div class="text2">
-                    <label for="confirm_password">Confirm Password</label>
-                </div>
-                <input name="confirm_pass" type="password" onkeyup="check(this)">
-                <error id="alert"></error>
-            </div>
-
-            <!--Sign-up Button and other checkbox and links
-            <div class="btn">
-                <button id="submit" type="submit" value="SUBMIT"><a href="home">Sign Up</a></button>
-            </div>
-            <!--<script src="/src/signup.js"></script> 
-    </div>
-</div>
-</body>
-</html> -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
+    <link rel="stylesheet" href="/signup.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="icon" type="img" href="Logo_NN.png">
 </head>
 <body>
-    <h2>Sign Up</h2>
 
-    <form action="/signup" method="post">
+    <div class="outer">
+        <h2>Sign Up</h2>
+        <form action="/signup" method="post">
 
-    <input type="text" name="name" placeholder="Name">
+        <div class="input-txt">
+            <input type="text" name="name" autocomplete="off">
+            <label for="name" class="label-name">
+                <span class="content-name">Name</span>
+            </label>
+        </div>
 
-    <input type="password" name="password" placeholder="Password">
+        <div class="input-pass">
+            <input type="password" name="password">
+            <label for="password" class="label-password">
+                <span class="content-pass">Password</span>
+            </label>
+        </div>
 
-    <input type="submit">
-</form>
+        <div class="btn-sub">
+            <input type="submit">
+        </div>
 
-
+        </form>
+    </div>
 </body>
 </html>
