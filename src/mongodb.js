@@ -9,7 +9,7 @@ mongoose.connect('mongodb://localhost:27017/LoginSignup')
 })
 
 const LogInSchema = new mongoose.Schema({
-    email:{
+    name:{
         type: String,
         require: true
     } ,

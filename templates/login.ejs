@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,11 +11,11 @@
     <link rel="icon" type="img" href="Logo_NN.png">
 </head>
 <body>
-    <script src="login.js"></script>
+    
     <div class="form-parent">
         <div class="form-wrappr">
         <h2>Log In</h2>
-        <!--Enter phone or email and password-->
+        <!--Enter phone or email and password
         <form action="/login">
             <div class="email-phn">
                 <div class="text">
@@ -30,7 +30,7 @@
                 <input type="password">
             </div>
 
-            <!--Log-in Button and links-->
+            <!--Log-in Button and links
             <div class="btn">
                 <a href="home"><button type="submit">Log In</button></a>
             </div>
@@ -43,6 +43,50 @@
         </div>
     </div>
 </div>
-    <script src="login.js"></script>
+    <!--<script src="login.js"></script> 
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="icon" type="img" href="Logo_NN.png">
+</head>
+<body>
+
+    <div class="outer">
+        <h2>Log In</h2>
+        <form action="/login" method="post">
+
+        <div class="input-txt">
+            <input type="text" name="name" autocomplete="off">
+            <label for="name" class="label-name">
+                <span class="content-name">Name</span>
+            </label>
+        </div>
+
+        <div class="input-pass">
+            <input type="password" name="password">
+            <label for="password" class="label-password">
+                <span class="content-pass">Password</span>
+            </label>
+        </div>
+
+        <div class="btn-sub">
+            <input type="submit">
+        </div>
+
+        <div class="link">
+            <h4>Don't have any account? <a href="signup">Sign-Up</h4></a>
+        </div>  
+        </form>
+    </div>
 </body>
 </html>
