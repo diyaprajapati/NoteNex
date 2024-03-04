@@ -3,7 +3,15 @@ const dotenv = require('dotenv');
 
 dotenv.config();
 
-mongoose.connect(process.env.MONGO_URI)
+// mongoose.connect(process.env.MONGO_URI)
+// .then(() => {
+//     console.log('mongodb connected');
+// })
+// .catch(() => {
+//     console.log('failed to connect');
+// })
+
+mongoose.connect('mongodb://localhost:27017/LoginSignup')
 .then(() => {
     console.log('mongodb connected');
 })
